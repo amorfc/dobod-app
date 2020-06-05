@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">DOBOD</string>
+    <string name="urun">URUN</string>
+    <string name="textview">TextView</string>
+    <string name="birim_fiyat">Birim Fiyatı</string>
+    <string name="todo">TODO</string>
+    <string name="product" />
+    <string name="product1">PRODUCT</string>
+    <string name="OrdersLayoutTextView">My Orders</string>
+    <string name="NewOrderLayoutTextView">Take Order</string>
+    <string name="MarketInfoDeliveryDay">Delivery Day</string>
+    <string name="MarkekInfolayKredi">"Kredi: "</string>
+    <string name="MarketInfoSale">"Discount: "</string>
+    <string name="MarketInfoLocation">"Location: "</string>
+    <string name="AddButtonDescript">Sipariş ver fotoğrafı</string>
+    <string name="dummy_date">11/09/2020</string>
+    <string name="dummy_Adress">Ankamall 5M Migros Üstü - Konya Devlet Yolu Akköprü Mevkii Ankara Emniyet Müd. Yanı No:2 İskitler / Ankara </string>
+    <string name="dummy_vendor_name">Migros</string>
+    <string name="TwoWayLogoutButton">Logout</string>
+    <string name="toplamturar">"Total Check : "</string>
+    <string name="indirimlitutar">"With Discount : "</string>
+    <string name="toplamtutardeger">120 tl</string>
+    <string name="indirimlitoplamtutardeger">100 tl</string>
+    <string name="siparisverbutton">Take Order</string>
+    <string name="calculatebutton">Calculate</string>
+    <string name="DummyPara_tl">1500tl</string>
+    <string name="DummyUnit">Unit</string>
+    <string name="DummyUrunAdı">kola:</string>
+    <string name="FirstProductName">Cuba\'s</string>
+    <string name="SecondProducName">Turkish</string>
+    <string name="ThirdProductName">Romeo y Juiletta</string>
+    <string name="FourProductName">Montecristo</string>
+    <string name="FiveProductName">Macanudo</string>
+    <string name="UnitPer">Per</string>
+    <string name="unitPacket">Pack</string>
+    <string name="CubaFiyatID">100tl</string>
+    <string name="TurkishFiyatID">200tl</string>
+    <string name="RomeoFiyatID">125tl</string>
+    <string name="MonteCristoFiyat">275tl</string>
+    <string name="api">AIzaSyBOP3eatTQYRonEq2J9hs-6QJ7TcnCd6Fk</string>
+    <string name="Macanudo">75tl</string>
+    <string name="ok">Okey</string>
+    <string name="cancel">Cancel</string>
+    <string name="dumy">0</string>
+    <string-array name="stringarry">
+        <item>puro,15 adet</item>
+        <item>puro,24 adet</item>
+        <item>puro,11 adet</item>
+        <item>puro,14 adet</item>
+        <item>puro,17 adet</item>
+    </string-array>
+
+</resources>

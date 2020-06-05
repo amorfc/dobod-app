@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4DC1CA"
+    tools:context=".Activity.Shopping.ShoppingActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="176dp"
+        android:background="#000000"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4DC1CA">
+
+            <TextView
+                android:id="@+id/ShopingLayCubaFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/CubaFiyatID"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DumyUnitCubaTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/UnitPer"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ShopingLayCubaFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopingLayCubaName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/FirstProductName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ShopingLayCubaEditText"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/DumyUnitCubaTextview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/cubas_details_btn"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#4DC1CA"
+                android:shadowColor="#FFFFFF"
+                android:text="Details"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShopingLayCubaName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4DC1CA">
+
+            <TextView
+                android:id="@+id/ShopingLayTurkishFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/TurkishFiyatID"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DumyUnitTurkishTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/unitPacket"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ShopingLayTurkishFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopingLayTurkishName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/SecondProducName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ShopingLayTurkishEditText"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/DumyUnitTurkishTextview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/turkish_details_btn"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#4DC1CA"
+                android:shadowColor="#FFFFFF"
+                android:text="Details"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShopingLayTurkishName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4DC1CA">
+
+            <TextView
+                android:id="@+id/DumyUnitRomeoTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/UnitPer"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ShopingLayRomeoFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopingLayRomeoName"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/ThirdProductName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ShopingLayRomeoEditText"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/DumyUnitRomeoTextview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopingLayRomeoFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/RomeoFiyatID"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/rome_details_btn"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#4DC1CA"
+                android:shadowColor="#FFFFFF"
+                android:text="Details"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShopingLayRomeoName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4DC1CA">
+
+            <TextView
+                android:id="@+id/ShopingLayMonteName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/FourProductName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ShopingLaymMonteEditText"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/DumyUnitMonteTextview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DumyUnitMonteTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/unitPacket"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ShopingLayMonteFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopingLayMonteFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/MonteCristoFiyat"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/monte_details_btn"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#4DC1CA"
+                android:shadowColor="#FFFFFF"
+                android:text="Details"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShopingLayMonteName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4DC1CA">
+
+            <TextView
+                android:id="@+id/ShopingLayMacanudoName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/FiveProductName"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/ShopingLayMacanudoBirim"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="0"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/DumyUnitTextview"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DumyUnitTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/UnitPer"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/ShopinlayMacanudoFiyat"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ShopinlayMacanudoFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/Macanudo"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/maca_details_btn"
+                android:layout_width="58dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="20dp"
+                android:background="#4DC1CA"
+                android:shadowColor="#FFFFFF"
+                android:text="Details"
+                android:textColor="#3F51B5"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ShopingLayMacanudoName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/toplamtutar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/toplamturar"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+    <TextView
+        android:id="@+id/toplamtutar_text_view5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/indirimlitutar"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplamtutar_text_view" />
+
+    <TextView
+        android:id="@+id/toplamtutar_text_view7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/dumy"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplamtutar_text_view6" />
+
+    <TextView
+        android:id="@+id/toplamtutar_text_view6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="264dp"
+        android:text="@string/dumy"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
+
+    <Button
+        android:id="@+id/calculatebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="15dp"
+        android:background="#4B52E4"
+        android:text="@string/calculatebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/takeorder" />
+
+    <Button
+        android:id="@+id/takeorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="15dp"
+        android:background="#797EE8"
+        android:enabled="false"
+        android:text="@string/siparisverbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/calculatebutton"
+        app:layout_constraintTop_toBottomOf="@+id/toplamtutar_text_view7"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
